@@ -1,0 +1,128 @@
+/* === WINDOWS 7 AERO THEME === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://i.imgur.com/8z3kW8P.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* === AERO GLASS PANEL === */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.37),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  margin: 1rem;
+}
+
+/* === TITLE BAR STYLE === */
+.title-bar {
+  background: linear-gradient(to bottom, #e6f0ff 0%, #c7dfff 100%);
+  border: 1px solid #a5c9ff;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #1e3b70;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -2rem -2rem 1.5rem -2rem;
+}
+
+.title-bar .close-btn {
+  width: 16px;
+  height: 16px;
+  background: #ff5c5c;
+  border-radius: 50%;
+  border: 1px solid #cc0000;
+  cursor: pointer;
+}
+
+/* === WINDOWS 7 BUTTONS === */
+.btn-win7 {
+  background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%);
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+}
+
+.btn-win7:hover {
+  background: linear-gradient(to bottom, #e6e6e6 0%, #c7c7c7 100%);
+}
+
+.btn-win7:active {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c7c7c7 0%, #e6e6e6 100%);
+}
+
+/* === LINKS === */
+a {
+  color: #0055d4;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff6b6b;
+}
+
+/* === TASKBAR (footer) === */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, #e6f0ff 0%, #c7dfff 100%);
+  border-top: 1px solid #a5c9ff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.start-btn {
+  background: linear-gradient(to bottom, #c7dfff 0%, #a5c9ff 100%);
+  border: 1px solid #80a7ff;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-weight: bold;
+  color: #1e3b70;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.clock {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #1e3b70;
+}
